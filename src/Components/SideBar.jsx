@@ -4,6 +4,7 @@ import Wallet from "../Assets/images/wallet.png";
 import Line from "../Assets/images/line.png";
 import Deploy from "../Assets/images/deploy.png";
 import { Link } from "react-router-dom";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 export default function SideBar() {
     return (
@@ -22,6 +23,8 @@ export default function SideBar() {
                             />
                         </Link>
                     </div>
+
+                    <ConnectButton showBalance={false} accountStatus="icon"/>
 
                     <div className="functions">
                         <div className="dash-content">
@@ -56,6 +59,7 @@ export default function SideBar() {
                             </div>
                         </div>
                         <img src="/Ellipse.svg" alt="/Ellipse.svg"/>
+                
                     </div>
                 </div>
             </section>
